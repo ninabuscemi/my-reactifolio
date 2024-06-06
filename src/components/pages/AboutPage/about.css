@@ -1,0 +1,36 @@
+.about-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mobile-text {
+  text-align: left;
+}
+
+
+.raleway-font {
+  font-size: 3em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  margin: 0 0.5rem;
+  color: #333; /* Adjust the color as desired */
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #666; /* Adjust the hover color as desired */
+}
+
+@media (max-device-width: 600px) {
+  .mobile-text {
+    text-align: center;
+  }
+}

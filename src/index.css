@@ -1,0 +1,223 @@
+* {
+  font-family: 'Raleway', 'Helvetica';
+}
+
+p {
+  font-family: 'Helvetica';
+}
+
+body {
+  background: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/1df9fc81381729.5cfe535103e56.jpg');
+  background-size: cover;
+}
+
+/* cards */
+.card-img {
+  height: 380px;
+}
+
+.card {
+  width: 550px;
+}
+
+/* Adjust the spacing between cards */
+.row {
+  margin-left: 10px; /* Adjust the negative margin as needed */
+  margin-right: -15px; /* Adjust the negative margin as needed */
+}
+
+/* Adjust the spacing between cards */
+.col {
+  padding-left: 300px; /* Adjust the padding as needed */
+  padding-right: 15px; /* Adjust the padding as needed */
+}
+
+/* Styles for smaller screens */
+@media (max-width: 1200px) {
+  .card {
+    width: 400px; /* Reduce the width for smaller screens */
+  }
+
+  .card-img {
+    height: 300px; /* Reduce the height for smaller screens */
+  }
+}
+
+/* Styles for smaller screens */
+@media (max-width: 1000px) {
+  .card {
+    width: 300px; /* Reduce the width for smaller screens */
+  }
+
+  .card-img {
+    height: 200px; /* Reduce the height for smaller screens */
+  }
+}
+
+/* Styles for smaller screens */
+@media (max-width: 720px) {
+  .card {
+    width: 300px; /* Reduce the width for smaller screens */
+  }
+
+  .card-img {
+    height: 200px; /* Reduce the height for smaller screens */
+  }
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(81, 83, 81, 0.815);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card .link {
+  color: white;
+  text-decoration: none
+}
+
+.btn-space {
+  margin-right: 5px;
+}
+
+/* form */
+form {
+  max-width: 420px;
+  margin: 100px auto;
+}
+
+.feedback-input {
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid black;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid black;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.61);
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+[type="submit"]:hover {
+  background: black;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  position: fixed;
+  width: 20%;
+  margin-right: 300px;
+  height: 300px;
+  bottom: -200px;
+  color: black;
+  font-size: 25px;
+}
+
+.foot-social-media {
+  background: transparent;
+  padding: 25px 50px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-8px);
+}
+
+
+a.github {
+  color: #171515;
+}
+a.github:hover {
+  color: #171515;
+}
+
+a.linkedin {
+  color: #0072b1;
+}
+
+a.linkedin:hover {
+  color: #0072b1;
+}
+
+.insta-icon {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+  border-radius: 30%;
+}
+
+
+.mobile-foot {
+  text-align: left;
+}
+
+@media (max-device-width: 600px) {
+  .mobile-foot {
+    font-size: small;
+    padding-top: 10%
+  }
+}
